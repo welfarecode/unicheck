@@ -104,11 +104,10 @@
             object-fit: cover;
         }
 
+        .btn1 {
+            all: unset;
+        }
     </style>
-
-
-    <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
 </head>
 
 <body>
@@ -126,34 +125,26 @@
                 <div class="collapse navbar-collapse" id="navbarsExample06">
                     <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://go.hanyang.ac.kr/gate.do" target="_blank">한양대</a>
+                            <a class="nav-link" aria-current="page" href="https://go.hanyang.ac.kr/gate.do"
+                                target="_blank" onclick="copy('220800025')">한양대</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page"
-                                href="https://admission.skku.edu/admission/html/rolling/pass.html#"
-                                target="_blank">성균관대</a>
+                                href="https://admission.skku.edu/admission/html/rolling/pass.html#" target="_blank"
+                                onclick="copy('57597380129')">성균관대</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page"
-                                href="https://admission.uos.ac.kr/admission/main.do?epTicket=LOG"
-                                target="_blank">시립대</a>
+                                href="https://admission.uos.ac.kr/admission/main.do?epTicket=LOG" target="_blank"
+                                onclick="copy('920231047')">시립대</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://adm-u.unist.ac.kr/" target="_blank">UNIST</a>
+                            <a class="nav-link" aria-current="page" href="https://adm-u.unist.ac.kr/" target="_blank"
+                                onclick="copy('111010945')">UNIST</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="http://intro.uway.com/konkuk/intro.html" target="_blank">건국대</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">그 외 대학</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">서울대</a></li>
-                                <li><a class="dropdown-item" href="#">고려대</a></li>
-                                <li><a class="dropdown-item" href="#">연세대</a></li>
-                                <li><a class="dropdown-item" href="#">중앙대</a></li>
-                            </ul>
+                            <a class="nav-link" aria-current="page" href="http://enter.konkuk.ac.kr/main.do"
+                                target="_blank" onclick="copy('0172280033')">건국대</a>
                         </li>
                     </ul>
                     <form role="search">
@@ -170,11 +161,12 @@
                 <img class="swiper-slide" src="./assets/kazuha7.jpg" />
                 <img class="swiper-slide" src="./assets/kazuha8.jpg" />
                 <img class="swiper-slide" src="./assets/kazuha9.jpg" />
-            </div>  
+            </div>
             <div class="swiper-pagination"></div>
         </div>
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -189,6 +181,19 @@
                 dynamicBullets: true,
             },
         });
+
+        function copyToClipboard(val) {
+            const t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = val;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+        }
+        function copy(val) {
+            copyToClipboard(val);
+            alert('수험번호가 복사되었습니다!');
+        }
     </script>
 
 
