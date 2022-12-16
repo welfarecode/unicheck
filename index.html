@@ -124,35 +124,89 @@
 
                 <div class="collapse navbar-collapse" id="navbarsExample06">
                     <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://go.hanyang.ac.kr/gate.do"
-                                target="_blank" onclick="copy('220800025')">한양대</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="https://admission.skku.edu/admission/html/rolling/pass.html#" target="_blank"
-                                onclick="copy('57597380129')">성균관대</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="https://admission.uos.ac.kr/admission/main.do?epTicket=LOG" target="_blank"
-                                onclick="copy('920231047')">시립대</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://adm-u.unist.ac.kr/" target="_blank"
-                                onclick="copy('111010945')">UNIST</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="http://enter.konkuk.ac.kr/main.do"
-                                target="_blank" onclick="copy('0172280033')">건국대</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                한양대
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" href="http://addon.jinhakapply.com/RatioV1/RatioH/Ratio11640191.html">경쟁률</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="./assets/result/result_hanyang.pdf">입시결과</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="https://go.hanyang.ac.kr/gate.do"
+                                    target="_blank" onclick="copy('220800025')">입학처</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                성균관대
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" href="http://addon.jinhakapply.com/RatioV1/RatioH/Ratio10920101.html">경쟁률</a></li>
+                                <!-- <li><a class="dropdown-item" target="_blank" href="./assets/result/result_hanyang.pdf">입시결과</a></li> -->
+                                <li><a class="dropdown-item" href="/" onclick="alert('NOT READY')">입시결과</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="https://admission.skku.edu/admission/html/rolling/pass.html"
+                                    target="_blank" onclick="copy('57597380129')">입학처</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                시립대
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" href="http://ratio.uwayapply.com/Sl5KJmE6SmYlJjomSnBmVGY=">경쟁률</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="./assets/result/result_sirip.pdf">입시결과</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="https://admission.uos.ac.kr/admission/main.do?epTicket=LOG"
+                                    target="_blank" onclick="copy('920231047')">입학처</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                UNIST
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" href="http://ratio.uwayapply.com/Sl5KMCYlVzpKXiUmOiZKcGZUZg==">경쟁률</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="./assets/result/result_sirip.pdf">입시결과</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="https://adm-u.unist.ac.kr/"
+                                    target="_blank" onclick="copy('111010945')">입학처</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                건국대
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" target="_blank" href="http://ratio.uwayapply.com/Sl5KOTo5V2E5SmYlJjomSnBmVGY=">경쟁률</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="./assets/result/result_konkuk.pdf">입시결과</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="http://enter.konkuk.ac.kr/main.do"
+                                    target="_blank" onclick="copy('0172280033')">입학처</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 인천대
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" target="_blank" href="./assets/result.pdf">경쟁률/입시결과</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="./assets/result/result_incheon.pdf">경쟁률/입시결과</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
